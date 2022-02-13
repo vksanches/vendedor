@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Vitor Sanches</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Sanches</a>
+
+            <div class="div nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home-heart nav__icon'></i>
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon'></i>
+                            Perfil
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book-open nav__icon'></i>
+                            Formação
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>
+                            Habilidades
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase-alt nav__icon'></i>
+                            Experiência
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon'></i>
+                            Certificações
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="div nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt nav__icon'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        
+        <!-- Todos os elementos dessa div são para gerar o pdf -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+
+                <!-- Home -->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/foto.jpeg" alt="Imagem de perfil" class="home__img">
+
+                            <h1 class="home__title">
+                                <b>VITOR</b> SANCHES
+                                <h3 class="home__profession">44 anos, casado</h3>
+                            </h1>
+                        </div>
+
+                        <div class="home_address bd-grid">
+                            <span class="home__information">
+                                <i class='bx bx-map-pin home__icon'></i>
+                                Mogi das Cruzes, SP
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-envelope home__icon'></i>
+                                vitsanches@live.com
+                            </span>
+                            <span class="home__information">
+                                <i class='bx bx-phone home__icon'></i>
+                                +55 (11) 975375608
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Botão de tema light/dark -->
+                    <i class='bx bx-moon change-theme' title= "Tema claro/escuro" id= "theme-button"></i>
+
+                    <!-- Botão para gerar o pdf -->
+                    <i class='bx bx-download generate-pdf' title= "Baixar Currículo em PDF" id= "resume-button"></i>
+
+                </section>
+
+                <!-- Social -->
+                <section class="social section">
+                    <h2 class="section-title">SOCIAL</h2>
+
+                    <div class="social__container bd-grid">
+
+                        <a href="https://www.linkedin.com/in/vitsanches/" target= "_blank" class="social__link">
+                            <i class='bx bxl-linkedin-square social__icon'></i>
+                            vitor_sanches
+                        </a>
+
+                        <a href="https://www.facebook.com/vitor.sanches.3551" target= "_blank" class="social__link">
+                            <i class='bx bxl-facebook social__icon'></i>
+                            @vit_sanches
+                        </a>
+
+                    </div>
+                </section>
+
+                <!-- Perfil -->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Objetivo</h2>
+
+                    <p class="profile__description">
+                        Vendedor
+                    </p>
+                </section>
+
+                <!-- Educação -->
+                <section class="education section" id="education">
+                    <h2 class="section-title">Formação</h2>
+
+                    <div class="education__container bd-grid">
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="education__title">Sistemas de Informção</h3>
+                                <span class="education__studies">Uninove</span>
+                                <span class="education__year">Cursando Oitavo Semestre</span>
+                            </div>
+                        </div>
+
+                        <div class="ducation__content">
+                            <div class="ducation__time">
+                                <span class="ducation__rounder"></span>
+                                <span class="ducation__line"></span>
+                        </div>
+
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- Habilidades -->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">Habilidades</h2>
+
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Vendas
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Marketing Digital
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Midias Sociais
+                            </li>
+
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Exel Intermediario
+                            </li>
+
+                        </ul>
+
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Empenho
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Comunicação
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Criatividade
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Mentalidade de Crescimento
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <h2 class="section-title">Soft Skills</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Trabalho em Equipe
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Mentalidade de Crescimento
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Orientação ao Futuro
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Orientação ao Detalhe
+                            </li>
+                        </ul>
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Comunicação
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Criatividade
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Proatividade
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span>Persistência
+                            </li>
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+
+            <div class="resume__right">
+                <!-- Experiências -->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">Experiência</h2>
+
+                    <div class="experience__container bd-grid">
+
+                        <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+    
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Vendedor</h3>
+                                    <span class="experience__company">Fex Pé Calçados</span>
+                                    <p class="experience__description">Vendedor de Calçados</p>
+                                </div>
+                            </div>
+
+                            <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">Promotor de Merchandising</h3>
+                                <span class="experience__company">Seara</span>
+                                <p class="experience__description">Meu atual emprego, no qual desempenho as funções de Promotor a 7 anos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                                <!-- Linguagens -->
+                                <section class="languages section">
+                                    <h2 class="section-title">Idiomas</h2>
+                
+                                    <div class="languages__container">
+                                        <ul class="languages__content bd-grid">
+                                            <li class="languages__name">
+                                                <span class="languages__circle"></span>Português | Nativo
+                                            </li>
+                                            <li class="languages__name">
+                                                <span class="languages__circle"></span>Ingles | Avançado
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+                                <section class="languages section">
+                                    <h2 class="section-title">Informações Importantes</h2>
+                
+                                    <div class="languages__container">
+                                        <ul class="languages__content bd-grid">
+                                            <li class="languages__name">
+                                                <span class="languages__circle"></span>Carro Próprio
+                                            </li>
+                                            <li class="languages__name">
+                                                <span class="languages__circle"></span>Habilitação B
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </section>
+
+                <!-- Certificados -->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">EXPERIẼNCIA PROFISSIONAL</h2>
+
+                    <div class="certificate__container bd-grid">
+
+                        <div class="certificate__content">
+                            <h3 class="certificate__title"></h3>
+                            <p class="certificate__description">Como vendedor de calçados compreendi que uma venda, não se resume apenas a tirar uma nota e ir para o proximo cliente, existem técnicas, objeções a serem contornadas, entender as dores de um cliente e apesar do mundo esta em crise existem 3 tipos de pessoas, as que estar perdendo dinheiro, as que estão se mantendo e as que estão ganhando e eu quero estar no time dos ganhadores, por isso não paro de me aprimorar.
+                        </p>
+                        </div>
+
+
+                    </div>
+                </section>
+
+
+                <!-- Interesses -->
+<!--                <section class="interests section">
+                    <h2 class="section-title">Interesses</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class='bx bx-library interests__icon'></i>
+                            <span class="interests__name">Literatura</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-palette interests__icon'></i>
+                            <span class="interests__name">Arte</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-album interests__icon'></i>
+                            <span class="interests__name">Música</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-movie interests__icon'></i>
+                            <span class="interests__name">Cinema</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-dice-3 interests__icon'></i>
+                            <span class="interests__name">RPG</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class='bx bx-layout interests__icon'></i>
+                            <span class="interests__name">UI/UX</span>
+                        </div>>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- Rolar a tela pra cima -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up-circle scrolltop__icon'></i>
+    </a>
+
+    <!-- HTML/PDF -->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

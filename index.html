@@ -139,7 +139,73 @@
                     <h2 class="section-title">Objetivo</h2>
 
                     <p class="profile__description">
-                        Vendedor
+                        <template>
+                            <v-app id="inspire" dark>
+                                <v-navigation-drawer
+                                    clipped
+                                    fixed
+                                    v-model="drawer"
+                                    app
+                                >
+                                    <v-list dense>
+                                        <v-list-tile @click="">
+                                            <v-list-tile-action>
+                                                <v-icon>dashboard</v-icon>
+                                            </v-list-tile-action>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Dashboard</v-list-tile-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                        <v-list-tile @click="">
+                                            <v-list-tile-action>
+                                                <v-icon>settings</v-icon>
+                                            </v-list-tile-action>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title>Settings</v-list-tile-title>
+                                            </v-list-tile-content>
+                                        </v-list-tile>
+                                    </v-list>
+                                </v-navigation-drawer>
+                                <v-toolbar app fixed clipped-left>
+                                    <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
+                                    <v-toolbar-title>Application</v-toolbar-title>
+                                </v-toolbar>
+                                <v-content>
+                                    <v-container fluid fill-height>
+                                        <v-layout justify-center align-center>
+                                            <v-flex shrink>
+                                                <v-tooltip right>
+                                                    <v-btn
+                                                        icon
+                                                        large
+                                                        :href="source"
+                                                        target="_blank"
+                                                        slot="activator"
+                                                    >
+                                                        <v-icon large>code</v-icon>
+                                                    </v-btn>
+                                                    <span>Source</span>
+                                                </v-tooltip>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-container>
+                                </v-content>
+                                <v-footer app fixed>
+                                    <span>&copy; 2017</span>
+                                </v-footer>
+                            </v-app>
+                        </template>
+                        
+                        <script>
+                            export default {
+                                data: () => ({
+                                    drawer: true
+                                }),
+                                props: {
+                                    source: String
+                                }
+                            }
+                        </script>
                     </p>
                 </section>
 
@@ -273,7 +339,7 @@
                             <div class="experience__data bd-grid">
                                 <h3 class="experience__title">Promotor de Merchandising</h3>
                                 <span class="experience__company">Seara</span>
-                                <p class="experience__description">Meu atual emprego, no qual desempenho as funções de Promotor a 7 anos.</p>
+                                <p class="experience__description">Meu atual emprego, no qual desempenho as funções de promotor desde 2014.</p>
                             </div>
                         </div>
                     </div>
@@ -288,7 +354,7 @@
                                                 <span class="languages__circle"></span>Português | Nativo
                                             </li>
                                             <li class="languages__name">
-                                                <span class="languages__circle"></span>Ingles | Avançado
+                                                <span class="languages__circle"></span>Inglês | Avançado
                                             </li>
                                         </ul>
                                     </div>
@@ -310,13 +376,13 @@
 
                 <!-- Certificados -->
                 <section class="certificate section" id="certificates">
-                    <h2 class="section-title">EXPERIẼNCIA PROFISSIONAL</h2>
+                    <h2 class="section-title">EXPERIÊNCIA PROFISSIONAL</h2>
 
                     <div class="certificate__container bd-grid">
 
                         <div class="certificate__content">
                             <h3 class="certificate__title"></h3>
-                            <p class="certificate__description">Como vendedor de calçados compreendi que uma venda, não se resume apenas a tirar uma nota e ir para o proximo cliente, existem técnicas, objeções a serem contornadas, entender as dores de um cliente e apesar do mundo esta em crise existem 3 tipos de pessoas, as que estar perdendo dinheiro, as que estão se mantendo e as que estão ganhando e eu quero estar no time dos ganhadores, por isso não paro de me aprimorar.
+                            <p class="certificate__description">Como vendedor de calçados compreendi que uma venda, não se resume apenas a tirar uma nota e ir para o próximo cliente, existem técnicas, objeções a serem contornadas, entender as dores de um cliente e apesar do mundo esta em crise existem 3 tipos de pessoas, as que estar perdendo dinheiro, as que estão se mantendo e as que estão ganhando e eu quero estar no time dos ganhadores, por isso não paro de me aprimorar.
                         </p>
                         </div>
 
